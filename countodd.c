@@ -5,10 +5,15 @@
     int countOdds(int low, int high){
 
         int count=0;
-        if (low==high)
+        if (low==high && low%2==1)
             {
-                count = 0;
+                count = 1;
             }
+        else if (low==high)
+        {
+            count=0;
+        }
+          
         else{
             for (int i = low; i <= high ; i++){
                 if (i%2==1)
