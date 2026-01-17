@@ -8,6 +8,11 @@ int countOdds(int low, int high){
 
     for (int i = low; i <= high ; i++)
     {
+        if (low==high)
+        {
+            count = 0;
+        }
+        
         if (i%2==1)
         {
             count++;
