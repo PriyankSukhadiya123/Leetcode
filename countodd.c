@@ -2,25 +2,23 @@
 
 
 
-int countOdds(int low, int high){
+    int countOdds(int low, int high){
 
-    int count=0;
-
-    for (int i = low; i <= high ; i++)
-    {
+        int count=0;
         if (low==high)
-        {
-            count = 0;
+            {
+                count = 0;
+            }
+        else{
+            for (int i = low; i <= high ; i++){
+                if (i%2==1)
+                {
+                    count++;
+                }
+            }
         }
-        
-        if (i%2==1)
-        {
-            count++;
-        }
+        return count;
     }
-    
-    return count;
-}
 
 int main(){
     int low,high;
